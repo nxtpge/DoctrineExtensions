@@ -13,11 +13,20 @@ use function sprintf;
 /** @author https://github.com/nxtpge */
 class Nvl2 extends FunctionNode
 {
-    private ArithmeticExpression $expr1;
+    /**
+     * @var ArithmeticExpression
+     */
+    private $expr1;
 
-    private ArithmeticExpression $expr2;
+    /**
+     * @var ArithmeticExpression
+     */
+    private $expr2;
 
-    private ArithmeticExpression $expr3;
+    /**
+     * @var ArithmeticExpression
+     */
+    private $expr3;
 
     public function getSql(SqlWalker $sqlWalker): string
     {
