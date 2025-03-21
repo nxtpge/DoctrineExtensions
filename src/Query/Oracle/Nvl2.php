@@ -28,7 +28,7 @@ class Nvl2 extends FunctionNode
             'NVL2(%s, %s, %s)',
             $sqlWalker->walkArithmeticExpression($this->expr1),
             $sqlWalker->walkArithmeticExpression($this->expr2),
-            $sqlWalker->walkArithmeticExpression($this->expr3),
+            $sqlWalker->walkArithmeticExpression($this->expr3)
         );
     }
 
